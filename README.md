@@ -1,6 +1,6 @@
 # Ga-Click
 
-An alternative to embedding JavaScript in your HTML via `onclick` attributes when working with Google Analytics.
+An alternative to embedding JavaScript in your HTML via `onclick` attributes when working with Google Analytics. Click [here](https://mykeels.github.io/ga-click/) to see demo.
 
 ## Getting started
 
@@ -23,6 +23,6 @@ You now have the power of Google Analytics without the headaches that inline Jav
 
 Enjoy!
 
-Author(s)
+### Author(s)
 
 - Ikechi Michael I.
