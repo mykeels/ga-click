@@ -1,0 +1,25 @@
+.elem {
+    font-size: 22px;
+    color: #333;
+    margin: 5px;
+    padding: 20px;
+    border: 1px solid #dedede;
+    cursor: pointer;
+}
+
+.elem:hover {
+    border: 1px solid #00AAFF;
+}
+
+.terminal {
+    background-color: #252525;
+    color: #00AAFF;
+    padding: 30px;
+    margin: 5px;
+    font-size: 15px;
+    font-family: 'Consolas';
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}

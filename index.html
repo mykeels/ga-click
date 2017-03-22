@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ga-Click, an alternative to inline JS for Google Analytics</title>
+        <link href="style.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>Ga-Click Demo</h1>
+        <br>
+        <div class="elem" ga-click='liked'>
+            Click to LIKE
+        </div>
+        <div class="elem" ga-click='save'>
+            Click to SAVE
+        </div>
+        <div class="elem" ga-click='post-review'>
+            Click to POST REVIEW
+        </div>
+        <br></br>
+        <h3>Press F5 to view console</h3>
+        <br>
+        <h4>Terminal</h4>
+        <div class="terminal"></div>
+        <script src="ga-click.js" type="text/javascript"></script>
+        <script src="terminal.js" type="text/javascript"></script>
+        <script>
+            var terminal = new Terminal(document.querySelector('.terminal'));
+            document.addEventListener("ga-click-event", function (ev) {
+                terminal.write('New Google Analytic Event: ' + JSON.stringify(ev.detail));
+                console.log(ev);
+            });
+        </script>
+    </body>
+</html>
